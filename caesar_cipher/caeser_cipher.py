@@ -1,4 +1,8 @@
 import re
+import nltk
+
+nltk.download('words')
+eng_words = nltk.corpus.words.words()
 
 letters ={
     'a': 1,
@@ -65,7 +69,8 @@ def decrypt(de_str, key = "none"):
                     if letters[l] == y: result.append(l)
         return "".join(result)
     else:
-        
+        pass
+
 
     
 
